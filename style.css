@@ -92,7 +92,7 @@ header nav ul li:hover ul a:hover {
   header nav {
     width: 80%;
     height: 100%;
-    background: #f0f0f0;
+    background: #fafafa;
     margin: 0;
     position: fixed;
   }
