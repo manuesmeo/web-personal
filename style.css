@@ -52,7 +52,7 @@ header nav ul li ul li {
 header nav ul li ul li a {
   width: auto;
   min-width: 100px;
-  padding: 0 20px;
+  padding: 0px 0px;
   text-decoration: none
 }
 
@@ -78,15 +78,69 @@ header nav ul li:hover ul a:hover {
   margin-left: 50px;
   content: "mnlsprt";
   color: #9f9f9f;
-  text-decoration: none;
 }
 
 .mnlsprt:hover:before {
   content: "manuel espinosa ortuño";
   color: #404040;
-  text-decoration: none;
 }
 
+/*Posiciones mnlsprt CAMBIADO*
+.mnl:before {
+  content: "mnl";
+  color: #9f9f9f;
+}
+.mnl:hover:before {
+  content: "manuel";
+  color: #404040;
+}
+*/
+
+/*Span y animaciones*/
+span {
+  display: inline;
+  float: left;
+  vertical-align: middle;
+  color: #9f9f9f;
+}
+
+span:nth-child(1):after {
+  content: "mnl";
+}
+span:nth-child(2):after {
+  content: "sp";
+}
+span:nth-child(3):after {
+  content: "pr";
+}
+span:nth-child(4):after {
+  content: "rt";
+}
+
+
+span:after {
+  width: auto;
+  display: inline-block;
+}
+
+span:nth-child(1):hover:after {
+  content: "manuel ";
+}
+span:nth-child(2):hover:after {
+  content: "studies";
+}
+span:nth-child(3):hover:after {
+  content: "projects";
+}
+span:nth-child(4):hover:after {
+  content: "writings";
+}
+
+span:hover:after {
+  width: auto;
+  color: #404040;
+  transition: .2s linear;
+}
 
 @media screen and (max-width:800px) {
   header nav {
